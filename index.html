@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morelli Books</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="file.png" alt="Logo do morelli" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Morelli</b>Books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Aonde ler</a>
+          </li>
+          
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu entretenimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Nossos livros</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="51M3SXaNFPL._SY780_.jpg"
+              alt="Livro A Arte de Correr na Chuva"></div>
+          <div class="swiper-slide"><img src="91-VKSVAKNL._AC_UF1000,1000_QL80_.jpg"
+              alt="Livro a promessa de um amigo"></div>
+          <div class="swiper-slide"><img src="Hachiko-O-Cao-que-Esperava-1.webp" 
+            alt="Livro Hachiko o cao que Esperava">
+          </div>
+          <div class="swiper-slide">
+            <img src="jntdpsmp.jpg" alt="Livro juntos para sempre" />
+          </div>
+          <div class="swiper-slide">
+            <img src="80106959o.webp" alt="Livro a caminho de casa" />
+          </div>
+          <div class="swiper-slide">
+            <img src="4vdcacho.jpg" alt="Livro quatro vidas deum cachorro" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Juntos Para Sempre</h2>
+            <p class="descrição__texto">
+              A continuação de Quatro vidas de um cachorro, o best-seller do The New York Times que emocionou milhões!Amigão, agora um cão velho que sentiu que cumpriu o seu objetivo de vida (ou vidas) vive feliz com Hannah. Porém, quando Gloria, uma aspirante a cantora, chega com Clarity, uma neta que Hannah não sabia que existia, Amigão se responsabiliza pelo bem-estar da menina, em especial ao ver o quanto Gloria não se importa com a própria filha. Assim, uma nova jornada começa, e o animal tem um novo objetivo: proteger e amar Clarity da forma incondicional que apenas um cachorro pode fazer.
+            </p>
+          </div>
+          <img src="juntos para sempre capa.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="https://kauanifranca.github.io/juntos-para-sempre/" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais lidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="4vdcacho.jpg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="jntdpsmp.jpg" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="80106959o.webp" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="Hachiko-O-Cao-que-Esperava-1.webp" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="51M3SXaNFPL._SY780_.jpg" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="91-VKSVAKNL._AC_UF1000,1000_QL80_.jpg" alt="livro sobre acessibilidade"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Recomendções</h3>
+            <h2 class="descrição__titulo-livro">Quatro Vidas De Um Cachorro</h2>
+            <p class="descrição__texto"> Quatro vidas de um cachorro aborda a questão mais básica da vida: por que estamos aqui? Emocionante e com boas doses de humor, este é um livro para todas as idades, que mostra o olhar de um cão sobre o relacionamento entre as pessoas e os laços eternos entre os seres humanos e seus animais.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="Projeto Redimensionar imagem.png" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="https://kauanifranca.github.io/Quatro-vidas-de-um-cachorro/" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Livros</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">A arte de correr na chuva</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Hachiko</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Cachorro</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Quatro vidas de um cachorro</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Emocionante</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Juntos para sempre</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dogs</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de novos livros, e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">MorelliBooks</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Colégio:</li>
+      <li class="lista-rodapé__item">
+        <img src="file.png" alt="Morelli" />
+        <a href="#" class="lista-rodapé__link">Morelli</a>
+      </li>
+      
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Feito por:</li>
+      <li class="lista-rodapé__item">
+        <img src="logoK.png" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Kauani dos Santos Couto de França</a>
+      </li>
+    
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Turma:</li>
+      <li class="lista-rodapé__item">
+        <img src="2c.png" alt="2c" />
+        <a href="#" class="lista-rodapé__link">2ºC</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
